@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Favoritos</h2>
+
+  <div *ngIf="favoritosService.listar().length === 0">
+    Nenhum item selecionado
+  </div>
+
+  <app-card-livro
+    *ngFor="let livro of favoritosService.listar()"
+    [livro]="livro"
+    (remover)="remover($event)">
+  </app-card-livro>
+
+  <p>Total de itens: {{ favoritosService.listar().length }}</p>
+</div>

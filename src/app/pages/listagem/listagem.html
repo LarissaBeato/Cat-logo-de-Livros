@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Lista de Livros</h2>
+
+  <div class="lista">
+    <app-card-livro
+      *ngFor="let livro of livros"
+      [livro]="livro"
+      (favoritar)="adicionarFavorito($event)"
+      (remover)="removerFavorito($event)">
+    </app-card-livro>
+  </div>
+</div>

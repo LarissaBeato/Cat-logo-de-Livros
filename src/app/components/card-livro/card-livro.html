@@ -1,0 +1,9 @@
+<div class="card">
+  <h3>{{ livro.titulo }}</h3>
+  <p><strong>Autor:</strong> {{ livro.autor }}</p>
+  <p><strong>Gênero:</strong> {{ livro.genero }}</p>
+  <p>{{ livro.resumo }}</p>
+
+  <button (click)="adicionarFavorito()">Favoritar</button>
+  <button (click)="removerLivro()">Remover</button>
+</div>
