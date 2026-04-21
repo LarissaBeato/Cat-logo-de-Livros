@@ -1,14 +1,22 @@
 .home {
   text-align: center;
-  margin-top: 60px;
+  padding: 20px;
 }
 
-.home h1 {
-  font-size: 36px;
-  color: #182848;
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
 }
 
-.home p {
-  margin: 20px 0;
-  font-size: 18px;
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
 }

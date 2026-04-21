@@ -15,6 +15,12 @@ export class ListagemComponent {
 
   livros = [
     {
+      titulo: 'Harry-Potter',
+      autor: 'J. K. Rowling',
+      genero: 'Fantasia',
+      resumo: 'Harry descobre que é um bruxo e inicia sua jornada em Hogwarts.',
+    },
+    {
       titulo: 'Dom Casmurro',
       autor: 'Machado de Assis',
       genero: 'Romance',
@@ -25,6 +31,12 @@ export class ListagemComponent {
       autor: 'George Orwell',
       genero: 'Distopia',
       resumo: 'Um futuro controlado pelo governo.'
+    },
+    {
+      titulo: 'Diário de um Banana: Rodrick é o Cara',
+      autor: 'Jeff Kinney',
+      genero: 'Comédia',
+      resumo: 'Greg tenta lidar com seu irmão Rodrick, que guarda um segredo embaraçoso e vive implicando com ele.',
     }
   ];
 
